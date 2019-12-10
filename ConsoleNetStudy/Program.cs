@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleNetStudy.ThreadTask;
+using System;
 
 namespace ConsoleNetStudy
 {
@@ -6,7 +7,20 @@ namespace ConsoleNetStudy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            ///Thread学习
+            //TreadStudy treadStudy = new TreadStudy();
+           // treadStudy.ThreadFunc();
+
+            //ThreadPool学习
+           // TreadPoolStudy treadPoolStudy = new TreadPoolStudy();
+           // treadPoolStudy.TreadPool();
+
+            TaskStudy taskStudy = new TaskStudy();
+            taskStudy.DoTaskStudy();
+            // taskStudy.UpdateArray();
+            Console.ReadLine();
+
         }
     }
 }

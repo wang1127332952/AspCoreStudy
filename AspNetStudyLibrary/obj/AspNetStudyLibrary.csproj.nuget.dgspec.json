@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj": {}
+    "D:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj": {}
   },
   "projects": {
-    "E:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj": {
+    "D:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj",
+        "projectUniqueName": "D:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj",
         "projectName": "AspNetStudyLibrary",
-        "projectPath": "E:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj",
+        "projectPath": "D:\\Study\\AspNetStudy\\AspNetStudyLibrary\\AspNetStudyLibrary.csproj",
         "packagesPath": "C:\\Users\\wanghuatao\\.nuget\\packages\\",
-        "outputPath": "E:\\Study\\AspNetStudy\\AspNetStudyLibrary\\obj\\",
+        "outputPath": "D:\\Study\\AspNetStudy\\AspNetStudyLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,7 +25,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packagesource": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
