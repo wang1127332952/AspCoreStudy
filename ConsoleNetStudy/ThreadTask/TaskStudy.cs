@@ -14,7 +14,8 @@ namespace ConsoleNetStudy.ThreadTask
     /// </summary>
     public class TaskStudy
     {
-        public void Study() 
+        #region Parallel
+        public void Study()
         {
             Action action = () =>
             {
@@ -31,13 +32,13 @@ namespace ConsoleNetStudy.ThreadTask
                 /// Parallel可以启动多线程，主线程也参与计算
                 /// ParallelOptions 轻松控制 最大并发量
                 Parallel.Invoke(
-                ()=> 
+                () =>
                 {
                     Console.WriteLine($"Task Parallel1 start,{Thread.CurrentThread.ManagedThreadId}");
                     Thread.Sleep(2000);
                     Console.WriteLine($"Task Parallel1 end,{Thread.CurrentThread.ManagedThreadId}");
                 },
-                ()=>
+                () =>
                 {
                     Console.WriteLine($"Task Parallel2 start,{Thread.CurrentThread.ManagedThreadId}");
                     Thread.Sleep(2000);
@@ -51,8 +52,7 @@ namespace ConsoleNetStudy.ThreadTask
                 });
             }
         }
-
-
+        #endregion
 
         #region Task解读
         /// <summary>
@@ -130,15 +130,12 @@ namespace ConsoleNetStudy.ThreadTask
 
         #region 多线程安全学习
         //锁的应用和扩展
-
-        #endregion
-
         /// <summary>
         /// 
         /// </summary>
         private void AddData()
         {
-            for (int i = 0; i < 6; i++) 
+            for (int i = 0; i < 6; i++)
             {
                 int k = i;
                 Task.Run(() =>
@@ -155,10 +152,10 @@ namespace ConsoleNetStudy.ThreadTask
         /// <summary>
         /// 更新数组
         /// </summary>
-        public void UpdateArray() 
+        public void UpdateArray()
         {
             List<int> vs = new List<int>();
-            for (int i = 0; i < 10; i++) 
+            for (int i = 0; i < 10; i++)
             {
                 //多线程之后数据小于10000
                 //List是数组,在内存上连续摆放，同一时刻去增加一个数组，都是操作内存同一个位置
@@ -176,7 +173,7 @@ namespace ConsoleNetStudy.ThreadTask
             }
             Thread.Sleep(5000);
             Console.WriteLine($"this is Count.{vs.Count}");
-            foreach (int i in vs) 
+            foreach (int i in vs)
             {
                 Console.WriteLine($"this is value.{i}");
             }
@@ -188,9 +185,13 @@ namespace ConsoleNetStudy.ThreadTask
             ///lock 相关
             ///公用锁就是出现相互阻塞
             ///锁不同的变量，才能并发
-            
+
             {
-                ///锁定的是内存引用--字符串享元 堆栈上只有一个 
+                ///锁定的是内存引用--字符串享元 堆栈上只有一个
+                lock (lock_string)
+                {
+
+                }
             }
 
             {
@@ -199,6 +200,7 @@ namespace ConsoleNetStudy.ThreadTask
 
                 }
 
+                lock(this)
                 {
                     ///递归 不会死锁
                 }
@@ -207,6 +209,9 @@ namespace ConsoleNetStudy.ThreadTask
         private static readonly object locks = new object();
         private readonly string lock_string = "静待花开";
         ///泛型类 在类型参数相同时 是同一个类
+        #endregion
+
+
 
     }
 

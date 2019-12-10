@@ -1,7 +1,6 @@
 E:\Study\AspNetStudy\AspNetStudyLibrary\bin\Debug\netcoreapp3.1\AspNetStudyLibrary.deps.json
 E:\Study\AspNetStudy\AspNetStudyLibrary\bin\Debug\netcoreapp3.1\AspNetStudyLibrary.dll
 E:\Study\AspNetStudy\AspNetStudyLibrary\bin\Debug\netcoreapp3.1\AspNetStudyLibrary.pdb
-E:\Study\AspNetStudy\AspNetStudyLibrary\obj\Debug\netcoreapp3.1\AspNetStudyLibrary.csprojAssemblyReference.cache
 E:\Study\AspNetStudy\AspNetStudyLibrary\obj\Debug\netcoreapp3.1\AspNetStudyLibrary.AssemblyInfoInputs.cache
 E:\Study\AspNetStudy\AspNetStudyLibrary\obj\Debug\netcoreapp3.1\AspNetStudyLibrary.AssemblyInfo.cs
 E:\Study\AspNetStudy\AspNetStudyLibrary\obj\Debug\netcoreapp3.1\AspNetStudyLibrary.dll

@@ -24,7 +24,6 @@ E:\Study\AspNetStudy\AspNetStudy\bin\Debug\netcoreapp3.1\AspNetStudy.runtimeconf
 E:\Study\AspNetStudy\AspNetStudy\bin\Debug\netcoreapp3.1\AspNetStudy.runtimeconfig.dev.json
 E:\Study\AspNetStudy\AspNetStudy\bin\Debug\netcoreapp3.1\AspNetStudy.dll
 E:\Study\AspNetStudy\AspNetStudy\bin\Debug\netcoreapp3.1\AspNetStudy.pdb
-E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.csprojAssemblyReference.cache
 E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\staticwebassets\AspNetStudy.StaticWebAssets.Manifest.cache
 E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\staticwebassets\AspNetStudy.StaticWebAssets.xml
 E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.MvcApplicationPartsAssemblyInfo.cache

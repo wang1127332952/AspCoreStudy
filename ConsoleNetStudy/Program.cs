@@ -10,15 +10,18 @@ namespace ConsoleNetStudy
 
             ///Thread学习
             //TreadStudy treadStudy = new TreadStudy();
-           // treadStudy.ThreadFunc();
+            // treadStudy.ThreadFunc();
 
             //ThreadPool学习
-           // TreadPoolStudy treadPoolStudy = new TreadPoolStudy();
-           // treadPoolStudy.TreadPool();
+            // TreadPoolStudy treadPoolStudy = new TreadPoolStudy();
+            // treadPoolStudy.TreadPool();
 
-            TaskStudy taskStudy = new TaskStudy();
+            //TaskStudy taskStudy = new TaskStudy();
             //taskStudy.DoTaskStudy();
-            taskStudy.UpdateArray();
+            //taskStudy.UpdateArray();
+
+            AwaitAsync awaitAsync = new AwaitAsync();
+            awaitAsync.Show();
             Console.ReadLine();
 
         }
