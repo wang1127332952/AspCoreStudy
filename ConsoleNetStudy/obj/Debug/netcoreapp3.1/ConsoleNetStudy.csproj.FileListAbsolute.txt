@@ -1,0 +1,11 @@
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\ConsoleNetStudy.exe
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\ConsoleNetStudy.deps.json
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\ConsoleNetStudy.runtimeconfig.json
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\ConsoleNetStudy.runtimeconfig.dev.json
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\ConsoleNetStudy.dll
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\ConsoleNetStudy.pdb
+E:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.csprojAssemblyReference.cache
+E:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.AssemblyInfoInputs.cache
+E:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.AssemblyInfo.cs
+E:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.dll
+E:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.pdb
