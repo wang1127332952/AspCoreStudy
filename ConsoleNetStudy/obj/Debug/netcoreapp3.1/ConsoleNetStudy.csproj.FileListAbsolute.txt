@@ -22,3 +22,5 @@ D:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.dll
 D:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.pdb
 D:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.csproj.CopyComplete
+E:\Study\AspNetStudy\ConsoleNetStudy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Study\AspNetStudy\ConsoleNetStudy\obj\Debug\netcoreapp3.1\ConsoleNetStudy.csproj.CopyComplete

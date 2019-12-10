@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\AspNetStudy\\ConsoleNetStudy\\ConsoleNetStudy.csproj",
+      "projectUniqueName": "E:\\Study\\AspNetStudy\\ConsoleNetStudy\\ConsoleNetStudy.csproj",
       "projectName": "ConsoleNetStudy",
-      "projectPath": "D:\\Study\\AspNetStudy\\ConsoleNetStudy\\ConsoleNetStudy.csproj",
+      "projectPath": "E:\\Study\\AspNetStudy\\ConsoleNetStudy\\ConsoleNetStudy.csproj",
       "packagesPath": "C:\\Users\\wanghuatao\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\AspNetStudy\\ConsoleNetStudy\\obj\\",
+      "outputPath": "E:\\Study\\AspNetStudy\\ConsoleNetStudy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -76,6 +76,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

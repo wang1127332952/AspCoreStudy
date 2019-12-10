@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\AspNetStudy\\AspNetStudy\\AspNetStudy.csproj",
+      "projectUniqueName": "E:\\Study\\AspNetStudy\\AspNetStudy\\AspNetStudy.csproj",
       "projectName": "AspNetStudy",
-      "projectPath": "D:\\Study\\AspNetStudy\\AspNetStudy\\AspNetStudy.csproj",
+      "projectPath": "E:\\Study\\AspNetStudy\\AspNetStudy\\AspNetStudy.csproj",
       "packagesPath": "C:\\Users\\wanghuatao\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\AspNetStudy\\AspNetStudy\\obj\\",
+      "outputPath": "E:\\Study\\AspNetStudy\\AspNetStudy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -32,6 +32,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

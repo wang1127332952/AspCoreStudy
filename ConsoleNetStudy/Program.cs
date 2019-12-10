@@ -17,8 +17,8 @@ namespace ConsoleNetStudy
            // treadPoolStudy.TreadPool();
 
             TaskStudy taskStudy = new TaskStudy();
-            taskStudy.DoTaskStudy();
-            // taskStudy.UpdateArray();
+            //taskStudy.DoTaskStudy();
+            taskStudy.UpdateArray();
             Console.ReadLine();
 
         }

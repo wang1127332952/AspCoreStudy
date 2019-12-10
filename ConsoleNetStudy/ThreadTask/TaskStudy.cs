@@ -151,40 +151,62 @@ namespace ConsoleNetStudy.ThreadTask
         }
 
         //多线程去访问同一个集合一般没问题，线程问题一般都出现在修改一个对象的过程中
+
+        /// <summary>
+        /// 更新数组
+        /// </summary>
         public void UpdateArray() 
         {
             List<int> vs = new List<int>();
-            for (int i = 0; i < 5; i++) 
+            for (int i = 0; i < 10; i++) 
             {
                 //多线程之后数据小于10000
                 //List是数组,在内存上连续摆放，同一时刻去增加一个数组，都是操作内存同一个位置
                 //两个cpu 同时发送指令，内存先执行一个，在执行一个，就会出现覆盖
+                int k = i; //不然值都是一样的
                 Task.Run(() =>
                 {
                     //Monitor.Enter(locks);
-                   // lock (locks) 
-                   // {
-                        vs.Add(i);
-                   // }
+                    lock (locks)
+                    {
+                        vs.Add(k);
+                    }
                     //Monitor.Exit(locks);
                 });
             }
-            Task.WaitAll();
-            foreach (int j in vs) 
+            Thread.Sleep(5000);
+            Console.WriteLine($"this is Count.{vs.Count}");
+            foreach (int i in vs) 
             {
-                Console.WriteLine($"this is value.{j}");
+                Console.WriteLine($"this is value.{i}");
+            }
+            ///线程安全定义：一段代码 单线程执行和多线程执行结果不一致就说明有线程安全问题
+            ///解决线程安全问题
+            ///锁 加锁可以解决安全 --单线程化  lock 保证 方法快任意时刻只有一个线程在执行
+            ///lock 语法糖 等价于Monitor 首先锁定一个（内存）引用地址--不能锁定 值类型 也不能是null
+            ///null 是一个占据引用，需要一个引用
+            ///lock 相关
+            ///公用锁就是出现相互阻塞
+            ///锁不同的变量，才能并发
+            
+            {
+                ///锁定的是内存引用--字符串享元 堆栈上只有一个 
             }
 
-            //线程安全定义：一段代码 单线程执行和多线程执行结果不一致就说明有线程安全问题
-            //解决线程安全问题
-            //锁 加锁可以解决安全 --单线程化  lock 保证 方法快任意时刻只有一个线程在执行
-            //lock 语法糖 等价于Monitor 首先锁定一个（内存）引用地址--不能锁定 值类型 也不能是null
-            //null 是一个占据引用，需要一个引用
-            //lock 相关
+            {
+                lock (this) ///this 当前实例
+                {
 
+                }
+
+                {
+                    ///递归 不会死锁
+                }
+            }
         }
-        private static readonly object locks = new object(); 
-
+        private static readonly object locks = new object();
+        private readonly string lock_string = "静待花开";
+        ///泛型类 在类型参数相同时 是同一个类
 
     }
 
