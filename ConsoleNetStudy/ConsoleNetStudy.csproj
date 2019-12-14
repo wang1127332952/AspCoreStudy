@@ -9,4 +9,12 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EventStudy\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatternStudy\DesignPatternStudy.csproj" />
+  </ItemGroup>
+
 </Project>

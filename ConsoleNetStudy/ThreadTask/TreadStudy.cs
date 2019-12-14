@@ -41,7 +41,5 @@ namespace ConsoleNetStudy.ThreadTask
             Console.WriteLine($"This is thread function end.{Thread.CurrentThread.ManagedThreadId}");
         }
 
-
-
     }
 }
