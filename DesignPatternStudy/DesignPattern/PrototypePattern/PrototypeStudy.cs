@@ -38,6 +38,10 @@ namespace DesignPatternStudy.DesignPattern
 
             PrototypeStudy prototypeStudy =(PrototypeStudy)_prototypeStudy.MemberwiseClone();
             //MemberwiseClone 内存拷贝 不走构造函数 直接内存拷贝,没有性能损失 产生新对象
+            //浅拷贝 只拷贝引用
+            //string 类型的 ="wht" 等同于 new String("wht"); 开辟新空间  实际上string不能修改
+           //深拷贝
+           //1.直接 new  2.子类型提供原型模式 3.序列化/反序列化 
             return prototypeStudy;
         }
 
