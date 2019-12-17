@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -11,6 +12,10 @@ namespace ConsoleNetStudy.ThreadTask
     /// 多线程 Task学习 3.0 出现
     /// Task被称之为多线程的最佳实践 
     /// 1.Task线程全部是线程池的线程 2. API非常丰富 非常适合开发
+    /// 
+    /// 任务并行库 TPL
+    /// 任务并行库 (TPL) 支持通过 System.Threading.Tasks.Parallel 类实现的数据并行。 
+    /// 此类对 for 循环和 foreach 循环（Visual Basic 中的 For 和 For Each）提供了基于方法的并行执行
     /// </summary>
     public class TaskStudy
     {
@@ -51,6 +56,39 @@ namespace ConsoleNetStudy.ThreadTask
                     Console.WriteLine($"Task Parallel3 end,{Thread.CurrentThread.ManagedThreadId}");
                 });
             }
+        }
+
+        public void ParallelStudy() 
+        {
+            long totalSize = 0;
+            String[] args = Environment.GetCommandLineArgs();
+            if (args.Length == 1)
+            {
+                Console.WriteLine("There are no command line arguments.");
+                return;
+            }
+            if (!Directory.Exists(args[1]))
+            {
+                Console.WriteLine("The directory does not exist.");
+                return;
+            }
+
+            String[] files = Directory.GetFiles(args[1]);
+            Parallel.For(0, files.Length,
+                         index => {
+                             FileInfo fi = new FileInfo(files[index]);
+                             long size = fi.Length;
+                             Interlocked.Add(ref totalSize, size);
+                         });
+            Console.WriteLine("Directory '{0}':", args[1]);
+            Console.WriteLine("{0:N0} files, {1:N0} bytes", files.Length, totalSize);
+            // Sequential version            
+            //foreach (var item in sourceCollection)
+            //{
+            //    Process(item);
+            //}
+            //// Parallel equivalent
+            //Parallel.ForEach(sourceCollection, item => Process(item));
         }
         #endregion
 

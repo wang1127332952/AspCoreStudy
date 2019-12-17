@@ -32,3 +32,4 @@ E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.AssemblyInf
 E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.RazorTargetAssemblyInfo.cache
 E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.dll
 E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.pdb
+E:\Study\AspNetStudy\AspNetStudy\obj\Debug\netcoreapp3.1\AspNetStudy.csprojAssemblyReference.cache
