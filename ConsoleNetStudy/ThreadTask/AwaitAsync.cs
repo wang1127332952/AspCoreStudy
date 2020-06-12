@@ -37,7 +37,8 @@ namespace ConsoleNetStudy.ThreadTask
             //this.NoReturn();
             //this.NoReturnAsync();
             //this.ReturnAsync();
-            this.ReturnLongAsync();
+            long v = this.ReturnLongAsync(1).GetAwaiter().GetResult();
+            this.ReturnLongAsync(2);
             Console.WriteLine($"MAIN END.{Thread.CurrentThread.ManagedThreadId}");
 
         }
@@ -98,23 +99,23 @@ namespace ConsoleNetStudy.ThreadTask
             //Task的子线程完成 如果没有await 那么调用线程完成
         }
 
-        private async Task<long> ReturnLongAsync()
+        private async Task<long> ReturnLongAsync(int i)
         {
             long result = 0;
-            Console.WriteLine($"ReturnLongAsync START.{Thread.CurrentThread.ManagedThreadId}");
+            Console.WriteLine($"ReturnLongAsync i:{i} START.{Thread.CurrentThread.ManagedThreadId}");
             Task<long> task = Task.Run(() =>
             {
-                Console.WriteLine($"ReturnLongAsync TASK START.{Thread.CurrentThread.ManagedThreadId}");
+                Console.WriteLine($"ReturnLongAsync i:{i} TASK START.{Thread.CurrentThread.ManagedThreadId}");
                 
-                for (int i = 0; i < 10000; i++) 
+                for (int i = 0; i < 1000000; i++) 
                 {
                     result += i;
                 }
-                Console.WriteLine($"ReturnLongAsync TASK END.{Thread.CurrentThread.ManagedThreadId}");
+                Console.WriteLine($"ReturnLongAsync i:{i} TASK END.{Thread.CurrentThread.ManagedThreadId}");
                 return result;
             });
             await task;
-            Console.WriteLine($"ReturnAsync END,{result}.{Thread.CurrentThread.ManagedThreadId}");
+            Console.WriteLine($"ReturnAsync i:{i} END,{result}.{Thread.CurrentThread.ManagedThreadId}");
             return result;
         }
     }
